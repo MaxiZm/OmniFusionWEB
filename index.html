@@ -354,40 +354,36 @@ pre code{font-family:inherit; color:var(--ink-2);}
 .sec-item code{font-family:var(--mono); font-size:12px; color:var(--accent-bright); background:var(--surface-3); padding:1px 6px; border-radius:4px;}
 
 /* ═══════════ Benchmark ═══════════ */
-.bench-prov{display:flex; flex-wrap:wrap; gap:9px; justify-content:center; margin:-14px auto 38px; max-width:840px;}
+.bench-prov{display:flex; flex-wrap:wrap; gap:9px; justify-content:center; margin:-14px auto 38px; max-width:880px;}
 .bench-prov .chip{display:inline-flex; align-items:center; gap:8px;}
-.bench-prov .chip .dot{width:6px; height:6px; border-radius:var(--r-full); background:var(--ok); box-shadow:0 0 0 3px rgba(155,179,138,.16);}
+.bench-prov .chip .dot{width:6px; height:6px; border-radius:var(--r-full); background:var(--accent); box-shadow:0 0 0 3px var(--accent-wash);}
 .bench-prov .chip.src{color:var(--accent-bright); border-color:var(--accent-line); background:var(--accent-wash);}
 .bench-kpis{grid-template-columns:repeat(4,1fr);}
 .bench-kpis .spec{border-bottom:none !important; border-right:1px solid var(--rule) !important;}
 .bench-kpis .spec:last-child{border-right:none !important;}
 .bench-kpis dd{font-size:1.7rem;}
-.bench-kpis dd .ok{color:var(--ok); font-style:normal;}
+.bench-kpis dd em{font-style:normal; font-size:1rem; color:var(--ink-3); margin-left:1px;}
+.bench-kpis dd .ok{color:var(--ok);}
+.bench-kpis dd .ok em{color:var(--ok); opacity:.72;}
 .bench-tablewrap{margin-top:18px; border:1px solid var(--rule); border-radius:var(--r-lg); overflow:hidden; background:var(--surface-1);}
-.bench-scroll{overflow-x:auto;}
-table.bench{width:100%; border-collapse:collapse; font-size:13.5px; min-width:700px;}
-table.bench th,table.bench td{text-align:left; padding:14px 18px; border-bottom:1px solid var(--rule-faint); vertical-align:middle;}
-table.bench thead th{font-family:var(--mono); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); background:var(--surface-2); font-weight:500; white-space:nowrap;}
-table.bench td{color:var(--ink-2);}
-table.bench td.task{color:var(--ink); font-family:var(--mono); font-size:12.5px;}
-table.bench td .cat{display:block; font-family:var(--mono); font-size:10px; color:var(--ink-4); letter-spacing:.05em; margin-top:4px; text-transform:uppercase;}
-table.bench td.num{font-family:var(--mono); color:var(--ink); text-align:right; white-space:nowrap;}
-table.bench .tool{font-family:var(--mono); color:var(--accent-bright); font-size:12.5px;}
-table.bench .pass{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; color:var(--ok); letter-spacing:.05em; text-transform:uppercase;}
-table.bench .pass svg{width:13px; height:13px; stroke-width:2.4;}
-table.bench .judge{font-family:var(--mono); font-size:12px; color:var(--ink-2); white-space:nowrap;}
-table.bench tbody tr{transition:background .15s var(--ease);}
-table.bench tbody tr:hover{background:var(--surface-2);}
-table.bench tfoot td{border-top:1px solid var(--rule); border-bottom:none; font-family:var(--mono); color:var(--ink); background:var(--surface-2);}
-.bench-panel{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;}
-.bench-panel .node{flex:1 1 230px; display:flex; align-items:center; gap:12px; border:1px solid var(--rule); border-radius:var(--r-md); background:var(--surface-1); padding:14px 16px;}
-.bench-panel .node .st{width:8px; height:8px; border-radius:var(--r-full); flex-shrink:0;}
-.bench-panel .node.ok .st{background:var(--ok); box-shadow:0 0 0 3px rgba(155,179,138,.16);}
-.bench-panel .node.dropped{opacity:.62; border-style:dashed;}
-.bench-panel .node.dropped .st{background:var(--ink-4);}
-.bench-panel .node .m{font-family:var(--mono); font-size:12.5px; color:var(--ink); display:block;}
-.bench-panel .node .r{font-family:var(--mono); font-size:10px; color:var(--ink-3); letter-spacing:.05em; text-transform:uppercase; display:block; margin-top:3px;}
-.bench-note{margin:28px auto 0; max-width:780px; text-align:center; font-family:var(--mono); font-size:12px; color:var(--ink-3); line-height:1.75; letter-spacing:.01em;}
+.chart{padding:12px 24px 8px;}
+.bar-row{display:grid; grid-template-columns:minmax(150px,232px) 1fr 48px; align-items:center; gap:16px; padding:9px 0; border-bottom:1px solid var(--rule-faint);}
+.bar-row:last-child{border-bottom:none;}
+.bar-label{font-family:var(--mono); font-size:12px; color:var(--ink-2); text-align:right; line-height:1.35;}
+.bar-row.panel .bar-label{color:var(--ink);}
+.bar-label .kind{display:block; font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-4); margin-top:3px;}
+.bar-track{position:relative; height:24px; background:var(--surface-2); border:1px solid var(--rule-faint); border-radius:var(--r-sm); overflow:hidden;}
+.bar-fill{position:absolute; top:0; bottom:0; left:0; min-width:3px; border-radius:0 2px 2px 0;}
+.bar-row.solo .bar-fill{background:linear-gradient(90deg,var(--surface-3),var(--rule-strong));}
+.bar-row.panel .bar-fill{background:linear-gradient(90deg,var(--accent-ember),var(--accent)); box-shadow:0 0 24px -8px var(--accent-glow);}
+.bar-val{font-family:var(--mono); font-size:13px; color:var(--ink-2); text-align:right;}
+.bar-row.panel .bar-val{color:var(--accent-bright);}
+.chart-legend{display:flex; flex-wrap:wrap; gap:22px; padding:14px 24px; border-top:1px solid var(--rule); background:var(--surface-2); font-family:var(--mono); font-size:11px; letter-spacing:.04em; color:var(--ink-3);}
+.chart-legend .lg{display:inline-flex; align-items:center; gap:8px;}
+.chart-legend .sw{width:15px; height:10px; border-radius:2px;}
+.chart-legend .sw.panel{background:linear-gradient(90deg,var(--accent-ember),var(--accent));}
+.chart-legend .sw.solo{background:linear-gradient(90deg,var(--surface-3),var(--rule-strong));}
+.bench-note{margin:28px auto 0; max-width:840px; text-align:center; font-family:var(--mono); font-size:12px; color:var(--ink-3); line-height:1.75; letter-spacing:.01em;}
 .bench-note a{color:var(--accent-bright); border-bottom:1px solid var(--accent-line);}
 .bench-note b{color:var(--ink-2); font-weight:500;}
 
@@ -468,6 +464,12 @@ html.reveal-ready .reveal.reveal-in{opacity:1; transform:none;}
   .hero-cta .btn{width:100%;}
   .panelist{grid-template-columns:12px 72px 1fr auto; gap:10px;}
   .pm-status{min-width:0;}
+}
+@media (max-width:620px){
+  .chart{padding:6px 16px 4px;}
+  .chart-legend{padding:12px 16px; gap:18px;}
+  .bar-row{grid-template-columns:1fr 46px; gap:6px 12px; padding:11px 0;}
+  .bar-label{grid-column:1 / -1; text-align:left;}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important;}
@@ -832,92 +834,107 @@ stream <span class="t-punc">=</span> client.chat.completions.<span class="t-fn">
   </div>
 </section>
 
-<!-- ═══════ Benchmark (real live results) ═══════ -->
+<!-- ═══════ Benchmark (OpenRouter Fusion · DRACO) ═══════ -->
 <section id="benchmark">
   <div class="wrap">
     <div class="section-head center reveal">
-      <span class="eyebrow center">Measured, not mocked</span>
-      <h2 class="title">Real runs. <em>Real</em> receipts.</h2>
-      <p>A live pass of the <code style="font-family:var(--mono);color:var(--accent-bright)">fusion/draco</code> preset on the <b>tool-smoke</b> suite — three agentic tool-use tasks, with every panelist served through <b>OpenRouter</b>. Not a mock, not a leaderboard claim — just the trace the run actually recorded.</p>
+      <span class="eyebrow center">The architecture, independently proven</span>
+      <h2 class="title">A council beats the <em>frontier</em>.</h2>
+      <p>OmniFusion runs the same play as OpenRouter's Fusion — a panel of models, synthesized into one answer. On Perplexity AI's <b>DRACO</b> deep-research benchmark, <b>OpenRouter's own published results</b> show fusion panels outscoring <em>every</em> frontier model run solo. The architecture wins — and these are their numbers, not ours.</p>
     </div>
 
     <div class="bench-prov reveal">
-      <span class="chip"><span class="dot"></span>Live run</span>
-      <span class="chip src">Served via OpenRouter</span>
-      <span class="chip">fusion/draco</span>
-      <span class="chip">suite · tool-smoke</span>
-      <span class="chip">2026-06-27</span>
-      <span class="chip">driver · omnifusion-tool-runner</span>
+      <span class="chip src"><span class="dot"></span>Source · OpenRouter</span>
+      <span class="chip">Benchmark · DRACO</span>
+      <span class="chip">by Perplexity AI</span>
+      <span class="chip">100 research tasks</span>
+      <span class="chip">~39 weighted criteria</span>
+      <span class="chip">synthesizer · Opus 4.8</span>
+      <span class="chip">published Jun 2026</span>
     </div>
 
     <div class="ledger reveal">
-      <div class="ledger-head"><span class="sgn">§</span> the results — fusion/draco · models served via OpenRouter</div>
+      <div class="ledger-head"><span class="sgn">§</span> the takeaway — OpenRouter Fusion on DRACO</div>
       <dl class="ledger-grid bench-kpis">
-        <div class="spec"><dt>Tasks resolved</dt><dd><span class="ok">3 / 3</span><small>every tool-smoke task passed</small></dd></div>
-        <div class="spec"><dt>Total spend</dt><dd>$0.0035<small>$0.003488 total · ≈ $0.0012 / task</small></dd></div>
-        <div class="spec"><dt>Wall time</dt><dd>44.3<em>s</em><small>≈ 14.8 s per task, end to end</small></dd></div>
-        <div class="spec"><dt>Panel</dt><dd><em>3</em> models<small>2 returned · 1 dropped on error</small></dd></div>
+        <div class="spec"><dt>Top fusion panel</dt><dd><span class="ok">69.0<em>%</em></span><small>Fable 5 + GPT-5.5 · synth Opus 4.8</small></dd></div>
+        <div class="spec"><dt>Best single model</dt><dd>65.3<em>%</em><small>Claude Fable 5, running solo</small></dd></div>
+        <div class="spec"><dt>Budget panel</dt><dd>64.7<em>%</em><small>3 cheap models · ≈ 50% the cost</small></dd></div>
+        <div class="spec"><dt>Self-fusion gain</dt><dd><span class="ok">+6.7<em>pts</em></span><small>Opus×2 (65.5%) vs Opus solo (58.8%)</small></dd></div>
       </dl>
     </div>
 
     <div class="bench-tablewrap reveal">
-      <div class="ledger-head"><span class="sgn">§</span> per-task trace</div>
-      <div class="bench-scroll">
-        <table class="bench">
-          <thead>
-            <tr><th>Task</th><th>Tool selected</th><th>Verdict</th><th class="num">Latency</th><th class="num">Cost</th><th class="num">Tokens</th><th>Judge selected</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="task">tool-weather-select<span class="cat">tool-selection</span></td>
-              <td><span class="tool">get_weather</span></td>
-              <td><span class="pass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>pass</span></td>
-              <td class="num">15.7 s</td>
-              <td class="num">$0.00135</td>
-              <td class="num">900</td>
-              <td class="judge">deepseek-v4-flash</td>
-            </tr>
-            <tr>
-              <td class="task">tool-search-select<span class="cat">tool-selection</span></td>
-              <td><span class="tool">web_search</span></td>
-              <td><span class="pass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>pass</span></td>
-              <td class="num">12.0 s</td>
-              <td class="num">$0.00122</td>
-              <td class="num">899</td>
-              <td class="judge">gemini-3.5-flash</td>
-            </tr>
-            <tr>
-              <td class="task">tool-calculator-args<span class="cat">argument-extraction</span></td>
-              <td><span class="tool">calculate</span></td>
-              <td><span class="pass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>pass</span></td>
-              <td class="num">16.6 s</td>
-              <td class="num">$0.00092</td>
-              <td class="num">723</td>
-              <td class="judge">deepseek-v4-flash</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td class="task">Total · 3 tasks</td>
-              <td>—</td>
-              <td><span class="pass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>3 / 3</span></td>
-              <td class="num">44.3 s</td>
-              <td class="num">$0.00349</td>
-              <td class="num">2,522</td>
-              <td>—</td>
-            </tr>
-          </tfoot>
-        </table>
+      <div class="ledger-head"><span class="sgn">§</span> DRACO score — fusion panels vs single models</div>
+      <div class="chart">
+        <div class="bar-row panel">
+          <div class="bar-label">Fable 5 + GPT-5.5<span class="kind">fusion panel</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:69.0%"></div></div>
+          <div class="bar-val">69.0</div>
+        </div>
+        <div class="bar-row panel">
+          <div class="bar-label">Opus 4.8 + GPT-5.5 + Gemini 3.1 Pro<span class="kind">fusion panel</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:68.3%"></div></div>
+          <div class="bar-val">68.3</div>
+        </div>
+        <div class="bar-row panel">
+          <div class="bar-label">Opus 4.8 + GPT-5.5<span class="kind">fusion panel</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:67.6%"></div></div>
+          <div class="bar-val">67.6</div>
+        </div>
+        <div class="bar-row panel">
+          <div class="bar-label">Opus 4.8 ×2<span class="kind">self-fusion panel</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:65.5%"></div></div>
+          <div class="bar-val">65.5</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Claude Fable 5<span class="kind">single model · best solo</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:65.3%"></div></div>
+          <div class="bar-val">65.3</div>
+        </div>
+        <div class="bar-row panel">
+          <div class="bar-label">Gemini 3 Flash · Kimi K2.6 · DeepSeek V4 Pro<span class="kind">budget panel · ≈50% cost</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:64.7%"></div></div>
+          <div class="bar-val">64.7</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">DeepSeek V4 Pro<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:60.3%"></div></div>
+          <div class="bar-val">60.3</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">GPT-5.5<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:60.0%"></div></div>
+          <div class="bar-val">60.0</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Claude Opus 4.8<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:58.8%"></div></div>
+          <div class="bar-val">58.8</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Kimi K2.6<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:53.7%"></div></div>
+          <div class="bar-val">53.7</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Gemini 3.1 Pro<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:45.4%"></div></div>
+          <div class="bar-val">45.4</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Gemini 3 Flash<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:43.1%"></div></div>
+          <div class="bar-val">43.1</div>
+        </div>
+      </div>
+      <div class="chart-legend">
+        <span class="lg"><i class="sw panel"></i>Fusion panel (synthesized by Opus 4.8)</span>
+        <span class="lg"><i class="sw solo"></i>Single model</span>
+        <span class="lg" style="margin-left:auto;color:var(--ink-4)">DRACO score · % of weighted criteria</span>
       </div>
     </div>
 
-    <div class="bench-panel reveal">
-      <div class="node ok"><span class="st"></span><span><span class="m">deepseek/deepseek-v4-flash</span><span class="r">returned · judge picked 2×</span></span></div>
-      <div class="node ok"><span class="st"></span><span><span class="m">gemini/gemini-3.5-flash</span><span class="r">returned · judge picked 1×</span></span></div>
-      <div class="node dropped"><span class="st"></span><span><span class="m">mimo/mimo-v-2-5-pro</span><span class="r">errored · dropped, council continued</span></span></div>
-    </div>
-
-    <p class="bench-note">Every panelist's inference was served through <b>OpenRouter</b>; the cost and latency above are what OmniFusion metered per trace for this run. <b>tool-smoke</b> is a three-task contract suite, not a comparative leaderboard — no advantage over any single model is claimed. Raw artifact: <a href="https://github.com/MaxiZm/OmniFusion/blob/main/evals/coding/runs/draco-tool-live-store-20260627.json" target="_blank" rel="noopener">draco-tool-live-store-20260627.json</a>. OmniFusion is not affiliated with OpenRouter.</p>
+    <p class="bench-note">Scores are <b>OpenRouter's own</b> published results on Perplexity AI's DRACO deep-research benchmark — they measure <b>OpenRouter Fusion</b>, not OmniFusion, which implements the same panel → judge → synthesis architecture. No claim is made that OmniFusion reproduces these exact figures. Fable 5's solo score covers 93 of 100 tasks (7 blocked by content filters). Source: OpenRouter — <a href="https://openrouter.ai/blog/announcements/fusion-beats-frontier/" target="_blank" rel="noopener">“Surpassing Frontier Performance with Fusion”</a>, Jun 12 2026. OmniFusion is not affiliated with OpenRouter.</p>
   </div>
 </section>
 

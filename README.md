@@ -65,14 +65,15 @@ Pages, or an S3 bucket. Drop the folder in and point the root at `index.html`.
 
 ## Notes on copy
 
-All product claims are drawn from the OmniFusion README. Per the project's own
-benchmark-honesty rules, **no performance or quality advantage is asserted.**
+All OmniFusion product claims are drawn from the OmniFusion README. Per the
+project's own benchmark-honesty rules, **no performance advantage is asserted for
+OmniFusion itself.**
 
-The **Benchmark** section reports one real, live run — the `fusion/draco` preset
-on the `tool-smoke` suite, with every panelist served through **OpenRouter** —
-sourced verbatim from
-[`evals/coding/runs/draco-tool-live-store-20260627.json`](https://github.com/MaxiZm/OmniFusion/blob/main/evals/coding/runs/draco-tool-live-store-20260627.json)
-in the main repo. It shows the measured pass count, cost, latency, and per-task
-trace; it is explicitly labelled as a 3-task contract suite, **not** a
-comparative leaderboard, and claims no win over any single model. OmniFusion is
-not affiliated with OpenRouter.
+The **Benchmark** section makes the architectural case with third-party evidence:
+[OpenRouter's published DRACO results](https://openrouter.ai/blog/announcements/fusion-beats-frontier/)
+("Surpassing Frontier Performance with Fusion", Jun 12 2026) on Perplexity AI's
+DRACO deep-research benchmark, where fusion panels outscore every frontier model
+run solo. The numbers are charted verbatim from that post and are explicitly
+attributed to **OpenRouter Fusion** — they validate the *architecture* OmniFusion
+shares (panel → judge → synthesis), not OmniFusion's own runs. OmniFusion is not
+affiliated with OpenRouter.
