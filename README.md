@@ -56,8 +56,12 @@ python3 -m http.server 4173
 
 ## Deploy
 
-It's static. Any host works — GitHub Pages, Netlify, Vercel, Cloudflare Pages,
-or an S3 bucket. Drop the folder in and point the root at `index.html`.
+Live at **<https://maxizm.github.io/OmniFusionWEB/>**, served from the
+`gh-pages` branch (a mirror of `main` plus a `.nojekyll` marker). To redeploy,
+push your changes and re-sync `gh-pages` to `main`.
+
+It's static, so any host works — GitHub Pages, Netlify, Vercel, Cloudflare
+Pages, or an S3 bucket. Drop the folder in and point the root at `index.html`.
 
 ## Notes on copy
 
