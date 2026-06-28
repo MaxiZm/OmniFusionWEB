@@ -25,25 +25,30 @@ synthesized.
 - **Type** — Newsreader (editorial serif display, optical sizing), Archivo
   (technical grotesque body), Spline Sans Mono (data/labels). The verdict is set
   in serif against the mono machinery — the type contrast encodes meaning.
-- **Texture** — ledger hairline grid + warm drifting aurora + film grain.
-- **Structure** — `§` section marks for the one real sequence (the proceedings).
+- **Texture** — ledger hairline grid + two still warm blooms + film grain.
+- **Structure** — serif numerals (01–03) for the one real sequence (the
+  proceedings); `§` marks the ledger blocks.
+- **Emphasis** — headings are roman; the accent word carries weight via color +
+  a hand-drawn ink underline (no italic headers, no gradient text).
 
 ### The signature: *the council in session*
 
-The hero centerpiece is a live, orchestrated deliberation that boots on load:
+The signature centerpiece — its own framed stage just after the hero — is a
+live, orchestrated deliberation that boots into view:
 the prompt types in, three panelists move queued → calling → returned, a
 consensus meter resolves, the judge marks agreement and one **dissent**, and a
 synthesized **verdict** types out in serif. It loops gently and has a manual
 **replay**. It is illustrative (labelled as such) — no live model calls, no
 benchmark/accuracy claims.
 
-Other elements: an orchestrated hero load sequence, a compatibility statement
-(not a logo marquee), the §01–§03 proceedings with a connecting flow line,
-tabbed code samples with copy-to-clipboard, a bento feature grid with cursor
-spotlight, an instrument-grade spec ledger, scroll-reveal that is **fail-open**
-(content is visible by default; JS only opts into the hidden-then-animate state),
-visible keyboard focus, and a full `prefers-reduced-motion` path. Fully
-responsive.
+Other elements: a left-biased, type-led hero with a hand-drawn ink underline on
+the accent word, a compatibility statement (not a logo marquee), the numbered
+01–03 proceedings as a single-column transcript, tabbed code samples with
+copy-to-clipboard, a bento feature grid with inline-icon entries, an
+instrument-grade spec ledger, a single orchestrated hero entrance that is
+**fail-open** (content is visible by default; JS only opts into the
+animate-on-boot state), visible keyboard focus, and a full
+`prefers-reduced-motion` path. Fully responsive, down to 320 px.
 
 ## Run it
 
