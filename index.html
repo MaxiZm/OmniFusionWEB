@@ -505,10 +505,10 @@ html.reveal-ready .reveal.reveal-in{opacity:1; transform:none;}
       <span class="brand-word">Omni<em>Fusion</em></span>
     </a>
     <nav class="nav-links" id="navLinks">
+      <a href="#benchmark">Benchmark</a>
       <a href="#proceedings">How it works</a>
       <a href="#api">API</a>
       <a href="#features">Features</a>
-      <a href="#benchmark">Benchmark</a>
       <a href="#security">Security</a>
       <a href="https://github.com/MaxiZm/OmniFusion#readme" target="_blank" rel="noopener">Docs</a>
     </nav>
@@ -620,6 +620,110 @@ html.reveal-ready .reveal.reveal-in{opacity:1; transform:none;}
         </button>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ═══════ Benchmark (OpenRouter Fusion · DRACO) ═══════ -->
+<section id="benchmark">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">The architecture, independently proven</span>
+      <h2 class="title">A council beats the <em>frontier</em>.</h2>
+      <p>OmniFusion runs the same play as OpenRouter's Fusion — a panel of models, synthesized into one answer. On Perplexity AI's <b>DRACO</b> deep-research benchmark, <b>OpenRouter's own published results</b> show fusion panels outscoring <em>every</em> frontier model run solo. The architecture wins — and these are their numbers, not ours.</p>
+    </div>
+
+    <div class="bench-prov reveal">
+      <span class="chip src"><span class="dot"></span>Source · OpenRouter</span>
+      <span class="chip">Benchmark · DRACO</span>
+      <span class="chip">by Perplexity AI</span>
+      <span class="chip">100 research tasks</span>
+      <span class="chip">~39 weighted criteria</span>
+      <span class="chip">synthesizer · Opus 4.8</span>
+      <span class="chip">published Jun 2026</span>
+    </div>
+
+    <div class="ledger reveal">
+      <div class="ledger-head"><span class="sgn">§</span> the takeaway — OpenRouter Fusion on DRACO</div>
+      <dl class="ledger-grid bench-kpis">
+        <div class="spec"><dt>Top fusion panel</dt><dd><span class="ok">69.0<em>%</em></span><small>Fable 5 + GPT-5.5 · synth Opus 4.8</small></dd></div>
+        <div class="spec"><dt>Best single model</dt><dd>65.3<em>%</em><small>Claude Fable 5, running solo</small></dd></div>
+        <div class="spec"><dt>Budget panel</dt><dd>64.7<em>%</em><small>3 cheap models · ≈ 50% the cost</small></dd></div>
+        <div class="spec"><dt>Self-fusion gain</dt><dd><span class="ok">+6.7<em>pts</em></span><small>Opus×2 (65.5%) vs Opus solo (58.8%)</small></dd></div>
+      </dl>
+    </div>
+
+    <div class="bench-tablewrap reveal">
+      <div class="ledger-head"><span class="sgn">§</span> DRACO score — fusion panels vs single models</div>
+      <div class="chart">
+        <div class="bar-row panel">
+          <div class="bar-label">Fable 5 + GPT-5.5<span class="kind">fusion panel</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:69.0%"></div></div>
+          <div class="bar-val">69.0</div>
+        </div>
+        <div class="bar-row panel">
+          <div class="bar-label">Opus 4.8 + GPT-5.5 + Gemini 3.1 Pro<span class="kind">fusion panel</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:68.3%"></div></div>
+          <div class="bar-val">68.3</div>
+        </div>
+        <div class="bar-row panel">
+          <div class="bar-label">Opus 4.8 + GPT-5.5<span class="kind">fusion panel</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:67.6%"></div></div>
+          <div class="bar-val">67.6</div>
+        </div>
+        <div class="bar-row panel">
+          <div class="bar-label">Opus 4.8 ×2<span class="kind">self-fusion panel</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:65.5%"></div></div>
+          <div class="bar-val">65.5</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Claude Fable 5<span class="kind">single model · best solo</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:65.3%"></div></div>
+          <div class="bar-val">65.3</div>
+        </div>
+        <div class="bar-row panel">
+          <div class="bar-label">Gemini 3 Flash · Kimi K2.6 · DeepSeek V4 Pro<span class="kind">budget panel · ≈50% cost</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:64.7%"></div></div>
+          <div class="bar-val">64.7</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">DeepSeek V4 Pro<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:60.3%"></div></div>
+          <div class="bar-val">60.3</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">GPT-5.5<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:60.0%"></div></div>
+          <div class="bar-val">60.0</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Claude Opus 4.8<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:58.8%"></div></div>
+          <div class="bar-val">58.8</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Kimi K2.6<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:53.7%"></div></div>
+          <div class="bar-val">53.7</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Gemini 3.1 Pro<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:45.4%"></div></div>
+          <div class="bar-val">45.4</div>
+        </div>
+        <div class="bar-row solo">
+          <div class="bar-label">Gemini 3 Flash<span class="kind">single model</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:43.1%"></div></div>
+          <div class="bar-val">43.1</div>
+        </div>
+      </div>
+      <div class="chart-legend">
+        <span class="lg"><i class="sw panel"></i>Fusion panel (synthesized by Opus 4.8)</span>
+        <span class="lg"><i class="sw solo"></i>Single model</span>
+        <span class="lg" style="margin-left:auto;color:var(--ink-4)">DRACO score · % of weighted criteria</span>
+      </div>
+    </div>
+
+    <p class="bench-note">Scores are <b>OpenRouter's own</b> published results on Perplexity AI's DRACO deep-research benchmark — they measure <b>OpenRouter Fusion</b>, not OmniFusion, which implements the same panel → judge → synthesis architecture. No claim is made that OmniFusion reproduces these exact figures. Fable 5's solo score covers 93 of 100 tasks (7 blocked by content filters). Source: OpenRouter — <a href="https://openrouter.ai/blog/announcements/fusion-beats-frontier/" target="_blank" rel="noopener">“Surpassing Frontier Performance with Fusion”</a>, Jun 12 2026. OmniFusion is not affiliated with OpenRouter.</p>
   </div>
 </section>
 
@@ -834,110 +938,6 @@ stream <span class="t-punc">=</span> client.chat.completions.<span class="t-fn">
   </div>
 </section>
 
-<!-- ═══════ Benchmark (OpenRouter Fusion · DRACO) ═══════ -->
-<section id="benchmark">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <span class="eyebrow center">The architecture, independently proven</span>
-      <h2 class="title">A council beats the <em>frontier</em>.</h2>
-      <p>OmniFusion runs the same play as OpenRouter's Fusion — a panel of models, synthesized into one answer. On Perplexity AI's <b>DRACO</b> deep-research benchmark, <b>OpenRouter's own published results</b> show fusion panels outscoring <em>every</em> frontier model run solo. The architecture wins — and these are their numbers, not ours.</p>
-    </div>
-
-    <div class="bench-prov reveal">
-      <span class="chip src"><span class="dot"></span>Source · OpenRouter</span>
-      <span class="chip">Benchmark · DRACO</span>
-      <span class="chip">by Perplexity AI</span>
-      <span class="chip">100 research tasks</span>
-      <span class="chip">~39 weighted criteria</span>
-      <span class="chip">synthesizer · Opus 4.8</span>
-      <span class="chip">published Jun 2026</span>
-    </div>
-
-    <div class="ledger reveal">
-      <div class="ledger-head"><span class="sgn">§</span> the takeaway — OpenRouter Fusion on DRACO</div>
-      <dl class="ledger-grid bench-kpis">
-        <div class="spec"><dt>Top fusion panel</dt><dd><span class="ok">69.0<em>%</em></span><small>Fable 5 + GPT-5.5 · synth Opus 4.8</small></dd></div>
-        <div class="spec"><dt>Best single model</dt><dd>65.3<em>%</em><small>Claude Fable 5, running solo</small></dd></div>
-        <div class="spec"><dt>Budget panel</dt><dd>64.7<em>%</em><small>3 cheap models · ≈ 50% the cost</small></dd></div>
-        <div class="spec"><dt>Self-fusion gain</dt><dd><span class="ok">+6.7<em>pts</em></span><small>Opus×2 (65.5%) vs Opus solo (58.8%)</small></dd></div>
-      </dl>
-    </div>
-
-    <div class="bench-tablewrap reveal">
-      <div class="ledger-head"><span class="sgn">§</span> DRACO score — fusion panels vs single models</div>
-      <div class="chart">
-        <div class="bar-row panel">
-          <div class="bar-label">Fable 5 + GPT-5.5<span class="kind">fusion panel</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:69.0%"></div></div>
-          <div class="bar-val">69.0</div>
-        </div>
-        <div class="bar-row panel">
-          <div class="bar-label">Opus 4.8 + GPT-5.5 + Gemini 3.1 Pro<span class="kind">fusion panel</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:68.3%"></div></div>
-          <div class="bar-val">68.3</div>
-        </div>
-        <div class="bar-row panel">
-          <div class="bar-label">Opus 4.8 + GPT-5.5<span class="kind">fusion panel</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:67.6%"></div></div>
-          <div class="bar-val">67.6</div>
-        </div>
-        <div class="bar-row panel">
-          <div class="bar-label">Opus 4.8 ×2<span class="kind">self-fusion panel</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:65.5%"></div></div>
-          <div class="bar-val">65.5</div>
-        </div>
-        <div class="bar-row solo">
-          <div class="bar-label">Claude Fable 5<span class="kind">single model · best solo</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:65.3%"></div></div>
-          <div class="bar-val">65.3</div>
-        </div>
-        <div class="bar-row panel">
-          <div class="bar-label">Gemini 3 Flash · Kimi K2.6 · DeepSeek V4 Pro<span class="kind">budget panel · ≈50% cost</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:64.7%"></div></div>
-          <div class="bar-val">64.7</div>
-        </div>
-        <div class="bar-row solo">
-          <div class="bar-label">DeepSeek V4 Pro<span class="kind">single model</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:60.3%"></div></div>
-          <div class="bar-val">60.3</div>
-        </div>
-        <div class="bar-row solo">
-          <div class="bar-label">GPT-5.5<span class="kind">single model</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:60.0%"></div></div>
-          <div class="bar-val">60.0</div>
-        </div>
-        <div class="bar-row solo">
-          <div class="bar-label">Claude Opus 4.8<span class="kind">single model</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:58.8%"></div></div>
-          <div class="bar-val">58.8</div>
-        </div>
-        <div class="bar-row solo">
-          <div class="bar-label">Kimi K2.6<span class="kind">single model</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:53.7%"></div></div>
-          <div class="bar-val">53.7</div>
-        </div>
-        <div class="bar-row solo">
-          <div class="bar-label">Gemini 3.1 Pro<span class="kind">single model</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:45.4%"></div></div>
-          <div class="bar-val">45.4</div>
-        </div>
-        <div class="bar-row solo">
-          <div class="bar-label">Gemini 3 Flash<span class="kind">single model</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:43.1%"></div></div>
-          <div class="bar-val">43.1</div>
-        </div>
-      </div>
-      <div class="chart-legend">
-        <span class="lg"><i class="sw panel"></i>Fusion panel (synthesized by Opus 4.8)</span>
-        <span class="lg"><i class="sw solo"></i>Single model</span>
-        <span class="lg" style="margin-left:auto;color:var(--ink-4)">DRACO score · % of weighted criteria</span>
-      </div>
-    </div>
-
-    <p class="bench-note">Scores are <b>OpenRouter's own</b> published results on Perplexity AI's DRACO deep-research benchmark — they measure <b>OpenRouter Fusion</b>, not OmniFusion, which implements the same panel → judge → synthesis architecture. No claim is made that OmniFusion reproduces these exact figures. Fable 5's solo score covers 93 of 100 tasks (7 blocked by content filters). Source: OpenRouter — <a href="https://openrouter.ai/blog/announcements/fusion-beats-frontier/" target="_blank" rel="noopener">“Surpassing Frontier Performance with Fusion”</a>, Jun 12 2026. OmniFusion is not affiliated with OpenRouter.</p>
-  </div>
-</section>
-
 <!-- ═══════ Security ═══════ -->
 <section id="security">
   <div class="wrap">
@@ -1018,10 +1018,10 @@ stream <span class="t-punc">=</span> client.chat.completions.<span class="t-fn">
     </div>
     <div class="foot-col">
       <h5>Product</h5>
+      <a href="#benchmark">Benchmark</a>
       <a href="#proceedings">How it works</a>
       <a href="#api">API compatibility</a>
       <a href="#features">Features</a>
-      <a href="#benchmark">Benchmark</a>
       <a href="#security">Security model</a>
     </div>
     <div class="foot-col">
