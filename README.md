@@ -62,5 +62,13 @@ or an S3 bucket. Drop the folder in and point the root at `index.html`.
 ## Notes on copy
 
 All product claims are drawn from the OmniFusion README. Per the project's own
-benchmark-honesty rules, **no performance or quality advantage is asserted** —
-the page describes architecture and operator features only.
+benchmark-honesty rules, **no performance or quality advantage is asserted.**
+
+The **Benchmark** section reports one real, live run — the `fusion/draco` preset
+on the `tool-smoke` suite, with every panelist served through **OpenRouter** —
+sourced verbatim from
+[`evals/coding/runs/draco-tool-live-store-20260627.json`](https://github.com/MaxiZm/OmniFusion/blob/main/evals/coding/runs/draco-tool-live-store-20260627.json)
+in the main repo. It shows the measured pass count, cost, latency, and per-task
+trace; it is explicitly labelled as a 3-task contract suite, **not** a
+comparative leaderboard, and claims no win over any single model. OmniFusion is
+not affiliated with OpenRouter.
